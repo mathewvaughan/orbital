@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "orbital"
+version = "0.1.0"
+description = ""
+authors = ["Mathew Vaughan <vaughanmathew@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.90.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
