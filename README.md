@@ -7,6 +7,7 @@ Tech test for Orbital Witness
 1. Make sure you have poetry installed (https://python-poetry.org/docs/#installation) and it is on your path
 1. Run `poetry install` to install dependencies
 1. Run `poetry run uvicorn src:app --reload` to start the server
+1. To run tests, run `poetry run pytest`
 
 ## Rubric
 
