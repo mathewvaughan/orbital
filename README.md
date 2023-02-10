@@ -13,7 +13,7 @@ Tech test for Orbital Witness
 
 - I want to build a rest API using FastAPI
 - I will try not to use a database because this is a read only app and it will save time
-- Order of tasks:
+- Order of imnplementation of features:
     - Handle list endpoint
     - Handle pagination
     - Handle detail endpoint
@@ -21,5 +21,9 @@ Tech test for Orbital Witness
     - Handle desc and asc ordering
     - Handle ordering by title_number
     - Handle filtering by title_class
+- TODO:
+    - IoC for App and Datasource 
+    - Inject Datasource into App
+    - Add tests for App
 
 - I will try to use libraries to do the heavy lifting, because this would be a lot of work to do from scratch
