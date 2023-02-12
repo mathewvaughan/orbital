@@ -24,7 +24,6 @@ Tech test for Orbital Witness
     - Handle filtering by title_class
 
 - TODO
-    - add detail endpoint
     - handle missing id because why not
 
 - LATER: 
