@@ -5,8 +5,8 @@ def get_app(data):
     app = FastAPI()
 
 
-    @app.get("/")
+    @app.get("/api/titles")
     async def root():
-        return {"message": "Hello World"}
+        return data
 
     return app
