@@ -22,8 +22,11 @@ Tech test for Orbital Witness
     - Handle ordering by title_number
     - Handle filtering by title_class
 - TODO:
-    - IoC for App and Datasource 
-    - Inject Datasource into App
-    - Add tests for App
+    - Add more tests data
+    - determine response structure for pagination
+    - paginate
+    - add detail endpoint
+    - handle missing id because why not
+
 
 - I will try to use libraries to do the heavy lifting, because this would be a lot of work to do from scratch
