@@ -7,7 +7,10 @@ client = TestClient(get_app(
     data
 ))
 
-def test_read_main():
+def test_list_data_from_endpoint():
     response = client.get("/api/titles")
     assert response.status_code == 200
     assert response.json() == data
+
+def test_paginated_response():
+    pass

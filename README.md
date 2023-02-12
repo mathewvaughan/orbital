@@ -16,6 +16,7 @@ Tech test for Orbital Witness
 - Order of imnplementation of features:
     - Handle list endpoint
     - Handle pagination
+    - Handle custom page size pagination
     - Handle detail endpoint
     - Handle ordering by ID
     - Handle desc and asc ordering
@@ -25,6 +26,7 @@ Tech test for Orbital Witness
     - Add more tests data
     - determine response structure for pagination
     - paginate
+    - custom page size
     - add detail endpoint
     - handle missing id because why not
 
