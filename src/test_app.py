@@ -12,5 +12,7 @@ def test_list_data_from_endpoint():
     assert response.status_code == 200
     assert response.json() == data
 
-def test_paginated_response():
-    pass
+def test_detail_endpoint():
+    response = client.get("/api/titles/1")
+    assert response.status_code == 200
+    assert response.json() == data[1]

@@ -22,13 +22,15 @@ Tech test for Orbital Witness
     - Handle desc and asc ordering
     - Handle ordering by title_number
     - Handle filtering by title_class
-- TODO:
-    - Add more tests data
-    - determine response structure for pagination
-    - paginate
-    - custom page size
+
+- TODO
     - add detail endpoint
     - handle missing id because why not
 
+- LATER: 
+    - Add typing
+    - determine response structure for pagination
+    - paginate
+    - custom page size
 
 - I will try to use libraries to do the heavy lifting, because this would be a lot of work to do from scratch
