@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 
-def get_app():
+def get_app(data):
     app = FastAPI()
 
 
