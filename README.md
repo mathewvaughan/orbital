@@ -17,17 +17,18 @@ Tech test for Orbital Witness
     - Handle list endpoint ✅
     - Handle pagination
     - Handle custom page size pagination
-    - Handle detail endpoint
+    - Handle detail endpoint ✅
     - Handle ordering by ID
     - Handle desc and asc ordering
     - Handle ordering by title_number
     - Handle filtering by title_class
 
 - TODO
+    - handle missing id because why not
     
 
 - LATER: 
-    - handle missing id because why not (want docs again)
+    
     - Add typing
     - determine response structure for pagination
     - paginate

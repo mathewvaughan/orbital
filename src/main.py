@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 
 
 def get_app(data):
@@ -15,6 +15,8 @@ def get_app(data):
         for title in data:
             if title["id"] == id:
                 result = title
+        if result is None:
+            raise HTTPException(status_code=404, detail="Not Found")
         return result
 
     return app
