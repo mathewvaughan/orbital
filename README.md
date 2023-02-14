@@ -16,12 +16,9 @@ Tech test for Orbital Witness
 - Order of implementation of features:
     - Handle list endpoint ✅
     - Handle pagination ✅
-    - Handle custom page size pagination
+    - Handle custom page size pagination ✅
     - Handle detail endpoint ✅
     - Handle ordering by ID
     - Handle desc and asc ordering
     - Handle ordering by title_number
     - Handle filtering by title_class
-
-- TODO
-    - custom page size
