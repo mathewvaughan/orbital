@@ -32,24 +32,3 @@ def get_app(data):
     add_pagination(app)
 
     return app
-
-# app = FastAPI()
-
-
-# class User(BaseModel):
-#     name: str
-#     surname: str
-
-
-# users = [
-#     User(name='Yurii', surname='Karabas'),
-#     # ...
-# ]
-
-
-# @app.get('/users', response_model=Page[User])
-# async def get_users():
-#     return paginate(users)
-
-
-# add_pagination(app)
