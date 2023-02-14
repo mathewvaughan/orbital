@@ -45,3 +45,8 @@ def test_list_endpoint_order_by_title_number_descending():
     response = client.get("/api/titles?_sort=title_number&_order=desc")
     assert response.status_code == 200
     assert response.json()["items"] == sorted(data, key=lambda x: x["title_number"], reverse=True)[:10]
+
+def test_list_endpoint_filter_by_title_class():
+    response = client.get("/api/titles?title_class=Freehold")
+    assert response.status_code == 200
+    assert response.json()["items"] == [x for x in data if x["title_class"] == "Freehold"]

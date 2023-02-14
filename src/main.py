@@ -18,12 +18,17 @@ def get_app(data):
         params: Params = Depends(),
         _sort: str = None,
         _order: str = None,
+        title_class: str = None,
     ):
-        if _sort:
-            data.sort(key=lambda x: x[_sort], reverse=_order == "desc")
+        result = data
 
+        if _sort:
+            result.sort(key=lambda x: x[_sort], reverse=_order == "desc")
+
+        if title_class:
+            result = [x for x in data if x["title_class"] == title_class]
         
-        return paginate(data, params)
+        return paginate(result, params)
 
     @app.get("/api/titles/{id}")
     async def title_details(id):
