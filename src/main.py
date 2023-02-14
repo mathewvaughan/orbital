@@ -16,7 +16,13 @@ def get_app(data):
     @app.get("/api/titles", response_model=Page[Title])
     async def title_list(
         params: Params = Depends(),
+        _sort: str = None,
+        _order: str = None,
     ):
+        if _sort:
+            data.sort(key=lambda x: x[_sort], reverse=_order == "desc")
+
+        
         return paginate(data, params)
 
     @app.get("/api/titles/{id}")
