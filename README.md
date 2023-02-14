@@ -13,8 +13,8 @@ Tech test for Orbital Witness
 
 - I want to build a rest API using FastAPI
 - I will try not to use a database because this is a read only app and it will save time
-- Order of imnplementation of features:
-    - Handle list endpoint
+- Order of implementation of features:
+    - Handle list endpoint ✅
     - Handle pagination
     - Handle custom page size pagination
     - Handle detail endpoint
@@ -24,9 +24,10 @@ Tech test for Orbital Witness
     - Handle filtering by title_class
 
 - TODO
-    - handle missing id because why not
+    
 
 - LATER: 
+    - handle missing id because why not (want docs again)
     - Add typing
     - determine response structure for pagination
     - paginate
