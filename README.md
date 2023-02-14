@@ -7,6 +7,7 @@ Tech test for Orbital Witness
 1. Make sure you have poetry installed (https://python-poetry.org/docs/#installation) and it is on your path
 1. Run `poetry install` to install dependencies
 1. Run `poetry run uvicorn src:app --reload` to start the server
+1. Go to http://localhost:8000/docs to see the docs
 1. To run tests, run `poetry run pytest`
 
 ## Rubric
@@ -22,4 +23,4 @@ Tech test for Orbital Witness
     - Handle desc and asc ordering ✅
     - Handle ordering by title_number ✅
     - Handle filtering by title_class ✅
-- Now I need to add the app creation step with the loaded json and do a quick manual test to see if it works fine
+- Now I need to add the app creation step with the loaded json and do a quick manual test to see if it works fine ✅
