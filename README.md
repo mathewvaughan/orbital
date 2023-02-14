@@ -15,7 +15,7 @@ Tech test for Orbital Witness
 - I will try not to use a database because this is a read only app and it will save time
 - Order of implementation of features:
     - Handle list endpoint ✅
-    - Handle pagination
+    - Handle pagination ✅
     - Handle custom page size pagination
     - Handle detail endpoint ✅
     - Handle ordering by ID
@@ -24,14 +24,4 @@ Tech test for Orbital Witness
     - Handle filtering by title_class
 
 - TODO
-    - handle missing id because why not
-    
-
-- LATER: 
-    
-    - Add typing
-    - determine response structure for pagination
-    - paginate
     - custom page size
-
-- I will try to use libraries to do the heavy lifting, because this would be a lot of work to do from scratch

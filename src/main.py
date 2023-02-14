@@ -1,5 +1,5 @@
-from fastapi import FastAPI, HTTPException
-from fastapi_pagination import Page, paginate, add_pagination
+from fastapi import FastAPI, HTTPException, Depends
+from fastapi_pagination import Page, paginate, add_pagination, Params
 from pydantic import BaseModel
 
 class Title(BaseModel):
@@ -14,8 +14,10 @@ def get_app(data):
 
 
     @app.get("/api/titles", response_model=Page[Title])
-    async def title_list():
-        return paginate(data)
+    async def title_list(
+        params: Params = Depends(),
+    ):
+        return paginate(data, params)
 
     @app.get("/api/titles/{id}")
     async def title_details(id):
