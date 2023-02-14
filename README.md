@@ -21,4 +21,5 @@ Tech test for Orbital Witness
     - Handle ordering by ID ✅
     - Handle desc and asc ordering ✅
     - Handle ordering by title_number ✅
-    - Handle filtering by title_class
+    - Handle filtering by title_class ✅
+- Now I need to add the app creation step with the loaded json and do a quick manual test to see if it works fine
